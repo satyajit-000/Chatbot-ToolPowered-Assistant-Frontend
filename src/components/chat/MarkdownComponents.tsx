@@ -1,7 +1,6 @@
 import type { Components } from 'react-markdown';
 import { CodeBlock } from './CodeBlock';
-import { YouTubePreview } from './YoutubePreview';
-// import { YouTubePreview } from './YouTubePreview';
+import { YouTubePreview } from './YouTubePreview';
 
 const getYouTubeId = (url: string) => {
     try {
@@ -24,6 +23,14 @@ export const MarkdownComponents = ({
     expandedVideoId: string | null;
     setExpandedVideoId: (id: string | null) => void;
 }): Components => ({
+    p({ children }) {
+        return <div className="mb-2">{children}</div>;
+    },
+
+    li({ children }) {
+        return <li className="mb-1">{children}</li>;
+    },
+
     code({ className, children }) {
         const match = /language-(\w+)/.exec(className || '');
         const code = String(children).replace(/\n$/, '');

@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { cn } from '../../lib/utils';
 import { ToolMessage } from './ToolMessage';
-// import MarkdownComponents from './MarkdownComponents';
 import { Check, Copy } from 'lucide-react';
 import { MarkdownComponents } from './MarkdownComponents';
 import { handleCopy } from '../../lib/utils';
