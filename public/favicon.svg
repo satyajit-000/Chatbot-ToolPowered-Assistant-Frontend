@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Gradient background -->
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Dark background -->
+  <circle cx="32" cy="32" r="32" fill="url(#bgGrad)"/>
+  
+  <!-- Main geometric "L" shape (for LangGraph) -->
+  <!-- Vertical part -->
+  <rect x="22" y="16" width="8" height="32" rx="2" fill="url(#glowGrad)"/>
+  
+  <!-- Horizontal part -->
+  <rect x="22" y="40" width="20" height="8" rx="2" fill="url(#glowGrad)"/>
+  
+  <!-- Connecting nodes overlay (graph representation) -->
+  <circle cx="26" cy="20" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="26" cy="28" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="26" cy="36" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="26" cy="44" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="34" cy="44" r="2.5" fill="#ffffff" opacity="0.9"/>
+  <circle cx="38" cy="44" r="2.5" fill="#ffffff" opacity="0.9"/>
+  
+  <!-- Subtle connecting lines -->
+  <line x1="26" y1="20" x2="26" y2="28" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="26" y1="28" x2="26" y2="36" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="26" y1="36" x2="26" y2="44" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="26" y1="44" x2="34" y2="44" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  <line x1="34" y1="44" x2="38" y2="44" stroke="#ffffff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Accent glow dots -->
+  <circle cx="46" cy="20" r="1.5" fill="#00f5ff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="50" cy="28" r="1.5" fill="#00f5ff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="48" cy="36" r="1.5" fill="#00f5ff" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;0.3;0.7" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>
